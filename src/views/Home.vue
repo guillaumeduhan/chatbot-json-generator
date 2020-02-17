@@ -2,10 +2,11 @@
 #Home
   header
     h1 Welcome to chatbot-generator
-    p Create all your questions and answer for your chatbot.
+    p Create all your questions and answers for your chatbot. Get a JSON back.
   .content
     Generator(v-if="open")
-    b-button(variant="outline-primary", @click="openGenerator") + Create a question
+    b-button(variant="outline-primary", @click="openGenerator") Create a question
+  .model {{model}}
 </template>
 
 <script>
